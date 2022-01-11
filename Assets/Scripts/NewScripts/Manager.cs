@@ -24,6 +24,7 @@ public class Manager : MonoBehaviour
 
     private int spawnIndex = 0;
     private GameObject currentGarbage;
+    
     Controls inputs;
     // Start is called before the first frame update
     void Awake()
@@ -107,6 +108,33 @@ public class Manager : MonoBehaviour
             image1.SetActive(true);
             image2.SetActive(true);
             image3.SetActive(true);
+        }
+
+        if(image1.GetComponent<Image>().sprite == plasticBottle)
+        {
+            image1.transform.localScale = new Vector3(0.6f, 1, 1);
+        }
+        else
+        {
+            image1.transform.localScale = new Vector3(1, 1, 1);
+        }
+
+        if (image2.GetComponent<Image>().sprite == plasticBottle)
+        {
+            image2.transform.localScale = new Vector3(0.6f, 1, 1);
+        }
+        else
+        {
+            image2.transform.localScale = new Vector3(1, 1, 1);
+        }
+
+        if (image3.GetComponent<Image>().sprite == plasticBottle)
+        {
+            image3.transform.localScale = new Vector3(0.6f, 1, 1);
+        }
+        else
+        {
+            image3.transform.localScale = new Vector3(1, 1, 1);
         }
     }
 

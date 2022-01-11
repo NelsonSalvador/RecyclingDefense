@@ -11,6 +11,7 @@ public class SetData : MonoBehaviour
     private void Start()
     {
         slider.value = data.speed / 1000;
+
     }
     // Update is called once per frame
     void Update()

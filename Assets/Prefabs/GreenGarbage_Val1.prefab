@@ -155,7 +155,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   gameState: {fileID: 11400000, guid: 573887bb678780343929fe473bb6455b, type: 2}
   garbageValue: 1
-  pipeanimator: {fileID: 0}
+  data: {fileID: 11400000, guid: 652aec54c352ad74087b7a00b1e86d80, type: 2}
   underGarbage: 0
 --- !u!50 &7048241164071125874
 Rigidbody2D:

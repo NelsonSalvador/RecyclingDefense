@@ -7,6 +7,7 @@ public class GreenGarbage : MonoBehaviour
 {
     public GameState gameState;
     public int garbageValue;
+    public Data data;
     private Rigidbody2D rb;
     private Animator pipeanimator;
 
@@ -22,7 +23,7 @@ public class GreenGarbage : MonoBehaviour
     void Update()
     {
         if (underGarbage == false) 
-            rb.velocity = new Vector2(0, -150) * Time.deltaTime;
+            rb.velocity = new Vector2(0, -data.speed) * Time.deltaTime;
     }
 
     private void OnTriggerEnter2D(Collider2D collision)

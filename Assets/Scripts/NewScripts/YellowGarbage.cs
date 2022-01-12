@@ -23,7 +23,7 @@ public class YellowGarbage : MonoBehaviour
     void Update()
     {
         if (underGarbage == false)
-            rb.velocity = new Vector2(0, -data.speed) * Time.deltaTime;
+            rb.velocity = new Vector2(0, -data.speed * Time.deltaTime) ;
     }
 
     private void OnTriggerEnter2D(Collider2D collision)

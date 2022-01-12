@@ -20,10 +20,10 @@ public class YellowGarbage : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
         if (underGarbage == false)
-            rb.velocity = new Vector2(0, -data.speed * Time.deltaTime) ;
+            rb.velocity = new Vector2(0, -data.speed / 100);
     }
 
     private void OnTriggerEnter2D(Collider2D collision)

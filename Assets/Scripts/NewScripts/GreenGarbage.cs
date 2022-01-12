@@ -19,12 +19,6 @@ public class GreenGarbage : MonoBehaviour
         rb = gameObject.GetComponent<Rigidbody2D>();
     }
 
-    // Update is called once per frame
-    //void Update()
-    //{
-    //    if (underGarbage == false) 
-    //        rb.velocity = new Vector2(0, -data.speed * Time.deltaTime);
-    //}
     void FixedUpdate()
     {
         if (underGarbage == false)
